@@ -1,13 +1,12 @@
-import { useBeforeLeave } from "./useBeforeLeave";
+import { useFadeIn } from "./useFadeIn";
 
 const App = () => {
-  const begForLife = () => {
-    console.log("Pls don't leave");
-  }
-  useBeforeLeave(begForLife);
+  const fadeInH1 = useFadeIn(1, 2);
+  const fadeInP = useFadeIn(5, 3);
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <h1 {...fadeInH1}>Hello</h1>
+      <p {...fadeInP}>lorem ipsum bla bla bla</p>
     </div>
   );
 };
