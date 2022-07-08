@@ -1,19 +1,4 @@
-
-const usePreventLeave = () => {
-  const listener = (event) => {
-    event.preventDefault();
-    event.returnValue = "";
-  };
-  const enablePrevent = () => {
-    console.log("protected");
-    window.addEventListener("beforeunload", listener);
-  };
-  const disablePrevent = () => {
-    console.log("unprotected");
-    window.removeEventListener("beforeunload", listener);
-  };
-  return { enablePrevent, disablePrevent };
-};
+import { usePreventLeave } from "./usePreventLeave";
 
 const App = () => {
   const { enablePrevent, disablePrevent } = usePreventLeave();
