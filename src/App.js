@@ -1,12 +1,26 @@
-import { useConfirm } from "./useConfirm";
+
+const usePreventLeave = () => {
+  const listener = (event) => {
+    event.preventDefault();
+    event.returnValue = "";
+  };
+  const enablePrevent = () => {
+    console.log("protected");
+    window.addEventListener("beforeunload", listener);
+  };
+  const disablePrevent = () => {
+    console.log("unprotected");
+    window.removeEventListener("beforeunload", listener);
+  };
+  return { enablePrevent, disablePrevent };
+};
 
 const App = () => {
-  const deleteWorld = () => console.log("Deleting the world...");
-  const abort = () => console.log("Aborted");
-  const confirmDelete = useConfirm("Are you sure?", deleteWorld, abort);
+  const { enablePrevent, disablePrevent } = usePreventLeave();
   return (
     <div className="App">
-      <button onClick={confirmDelete}>Delete the world</button>
+      <button onClick={enablePrevent}>Protect</button>
+      <button onClick={disablePrevent}>UnProtect</button>
     </div>
   );
 };

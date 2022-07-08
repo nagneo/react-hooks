@@ -5,11 +5,11 @@
 - [x] useTitle
 - [x] useClick
 - [x] useHover
-- [ ] usePreventLeave
+- [x] usePreventLeave
 - [x] useConfirm
 - [ ] usePageLeave
 - [ ] useFadeIn
-- [ ] useFullscreen
+- [ ] useFullScreen
 - [ ] useNetwork
 - [ ] useNotification
 - [ ] useScroll
