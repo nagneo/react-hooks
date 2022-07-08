@@ -6,7 +6,7 @@
 - [x] useClick
 - [x] useHover
 - [ ] usePreventLeave
-- [ ] useConfirm
+- [x] useConfirm
 - [ ] usePageLeave
 - [ ] useFadeIn
 - [ ] useFullscreen
