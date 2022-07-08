@@ -10,7 +10,7 @@
 - [x] useBeforeLeave
 - [x] useFadeIn
 - [x] useNetwork
-- [ ] useScroll
+- [x] useScroll
 - [ ] useFullScreen
 - [ ] useNotification
 - [ ] useAxios
