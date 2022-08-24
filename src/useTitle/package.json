@@ -1,0 +1,28 @@
+{
+  "name": "@nagneo/use-title",
+  "version": "1.0.1",
+  "description": "React Hook to update your document's title",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nagneo/react-hooks.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "title"
+  ],
+  "author": "nagneo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nagneo/react-hooks/issues"
+  },
+  "homepage": "https://github.com/nagneo/react-hooks#readme",
+  "peerDependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
